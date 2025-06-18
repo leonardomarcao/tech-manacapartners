@@ -14,7 +14,7 @@ const ServicesCarousel = () => {
       buttonText: 'Conheça o João Pedro',
       icon: Brain,
       features: ['Atendimento 24/7', 'Multi-modal', 'Treinamento customizado'],
-      whatsappLink: 'https://wa.me/5516317009351'
+      whatsappLink: 'https://wa.me/5516317009351?text=Ol%C3%A1%21%20Gostaria%20de%20conhecer%20mais%20sobre%20o%20Jo%C3%A3o%20Pedro',
     },
     {
       id: 'data-dash',
@@ -24,7 +24,7 @@ const ServicesCarousel = () => {
       buttonText: 'Conheça alguns cases',
       icon: BarChart3,
       features: ['Dashboards interativos', 'Insights automáticos', 'Consolidação de dados'],
-      whatsappLink: 'https://wa.me/5511971891894'
+      whatsappLink: 'https://wa.me/5511971891894?text=Ol%C3%A1%21%20Gostaria%20de%20conhecer%20mais%20sobre%20as%20solu%C3%A7%C3%B5es%20de%20Data%20%26%20Dashboards%20da%20Manac%C3%A1%20Partners.',
     },
     {
       id: 'integration',
@@ -34,7 +34,7 @@ const ServicesCarousel = () => {
       buttonText: 'Conheça alguns cases',
       icon: GitBranch,
       features: ['Sistemas legados', 'APIs modernas', 'Sincronização automática'],
-      whatsappLink: 'https://wa.me/5511971891894'
+      whatsappLink: 'https://wa.me/5511971891894?text=Ol%C3%A1%21%20Gostaria%20de%20conhecer%20mais%20sobre%20as%20solu%C3%A7%C3%B5es%20de%20Integra%C3%A7%C3%A3o%20da%20Manac%C3%A1%20Partners.',
     },
     {
       id: 'process-design',
@@ -44,7 +44,7 @@ const ServicesCarousel = () => {
       buttonText: 'Conheça alguns cases',
       icon: Settings,
       features: ['Low-code solutions', 'Automação de processos', 'Otimização contínua'],
-      whatsappLink: 'https://wa.me/5511971891894'
+      whatsappLink: 'https://wa.me/5511971891894?text=Ol%C3%A1%21%20Gostaria%20de%20conhecer%20mais%20sobre%20as%20solu%C3%A7%C3%B5es%20de%20Desenho%20de%20Processos%20da%20Manac%C3%A1%20Partners.',
     }
   ];
 
