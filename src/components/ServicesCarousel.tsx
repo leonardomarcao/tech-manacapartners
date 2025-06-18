@@ -1,7 +1,6 @@
 'use client'
 import React, { useState, useCallback, useEffect } from 'react';
 import { ArrowRight, Brain, BarChart3, GitBranch, Settings, Zap, ChevronLeft, ChevronRight } from 'lucide-react';
-import Image from 'next/image';
 
 const ServicesCarousel = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -14,7 +13,8 @@ const ServicesCarousel = () => {
       image: '/assets/3.png',
       buttonText: 'Conheça o João Pedro',
       icon: Brain,
-      features: ['Atendimento 24/7', 'Multi-modal', 'Treinamento customizado']
+      features: ['Atendimento 24/7', 'Multi-modal', 'Treinamento customizado'],
+      whatsappLink: 'https://wa.me/5516317009351'
     },
     {
       id: 'data-dash',
@@ -23,7 +23,8 @@ const ServicesCarousel = () => {
       image: '/assets/4.png',
       buttonText: 'Conheça alguns cases',
       icon: BarChart3,
-      features: ['Dashboards interativos', 'Insights automáticos', 'Consolidação de dados']
+      features: ['Dashboards interativos', 'Insights automáticos', 'Consolidação de dados'],
+      whatsappLink: 'https://wa.me/5511971891894'
     },
     {
       id: 'integration',
@@ -32,7 +33,8 @@ const ServicesCarousel = () => {
       image: '/assets/5.png',
       buttonText: 'Conheça alguns cases',
       icon: GitBranch,
-      features: ['Sistemas legados', 'APIs modernas', 'Sincronização automática']
+      features: ['Sistemas legados', 'APIs modernas', 'Sincronização automática'],
+      whatsappLink: 'https://wa.me/5511971891894'
     },
     {
       id: 'process-design',
@@ -41,7 +43,8 @@ const ServicesCarousel = () => {
       image: '/assets/6.png',
       buttonText: 'Conheça alguns cases',
       icon: Settings,
-      features: ['Low-code solutions', 'Automação de processos', 'Otimização contínua']
+      features: ['Low-code solutions', 'Automação de processos', 'Otimização contínua'],
+      whatsappLink: 'https://wa.me/5511971891894'
     }
   ];
 
@@ -89,11 +92,10 @@ const ServicesCarousel = () => {
                         className="group bg-white/80 backdrop-blur-sm rounded-3xl shadow-xl overflow-hidden border border-gray-100 hover:shadow-2xl transition-all duration-500 transform hover:scale-105 hover:-translate-y-2"
                     >
                       <div className="relative h-64 overflow-hidden">
-                        <Image
+                        <img
                             src={service.image}
                             alt={service.title}
-                            fill
-                            className="object-cover group-hover:scale-110 transition-transform duration-500"
+                            className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                         />
                         <div className="absolute inset-0 bg-black/50 group-hover:bg-[#3c074e]/60 transition-all duration-300"></div>
                         <div className="absolute top-4 left-4 bg-white/90 backdrop-blur-sm p-3 rounded-full shadow-lg">
@@ -119,9 +121,14 @@ const ServicesCarousel = () => {
                           {service.description}
                         </p>
 
-                        <button className="w-full bg-[#3c074e] text-white py-4 px-6 rounded-full hover:shadow-xl transition-all duration-300 font-semibold transform hover:scale-105 group-hover:-translate-y-1">
+                        <a
+                            href={service.whatsappLink}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="block w-full bg-[#3c074e] text-white py-4 px-6 rounded-full hover:shadow-xl transition-all duration-300 font-semibold transform hover:scale-105 group-hover:-translate-y-1 text-center"
+                        >
                           {service.buttonText}
-                        </button>
+                        </a>
                       </div>
                     </div>
                 );
@@ -141,11 +148,10 @@ const ServicesCarousel = () => {
                         <div key={service.id} className="w-full flex-shrink-0 px-4">
                           <div className="bg-white/80 backdrop-blur-sm rounded-3xl shadow-xl overflow-hidden border border-gray-100">
                             <div className="relative h-64">
-                              <Image
+                              <img
                                   src={service.image}
                                   alt={service.title}
-                                  fill
-                                  className="object-cover"
+                                  className="w-full h-full object-cover"
                               />
                               <div className="absolute inset-0 bg-black/50"></div>
                               <div className="absolute top-4 left-4 bg-white/90 backdrop-blur-sm p-3 rounded-full shadow-lg">
@@ -171,9 +177,14 @@ const ServicesCarousel = () => {
                                 {service.description}
                               </p>
 
-                              <button className="w-full bg-[#3c074e] text-white py-4 px-6 rounded-full hover:shadow-xl transition-all duration-300 font-semibold">
+                              <a
+                                  href={service.whatsappLink}
+                                  target="_blank"
+                                  rel="noopener noreferrer"
+                                  className="block w-full bg-[#3c074e] text-white py-4 px-6 rounded-full hover:shadow-xl transition-all duration-300 font-semibold text-center"
+                              >
                                 {service.buttonText}
-                              </button>
+                              </a>
                             </div>
                           </div>
                         </div>
