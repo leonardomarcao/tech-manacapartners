@@ -4,7 +4,6 @@ import { ArrowRight, Brain, BarChart3, GitBranch, Settings, Zap, ChevronLeft, Ch
 
 const ServicesCarousel = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
-
   const services = [
     {
       id: 'ai-bots',
